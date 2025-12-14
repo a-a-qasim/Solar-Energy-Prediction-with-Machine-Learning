@@ -15,8 +15,8 @@ I focused on **fixing statistical inconsistencies** and **optimizing model train
 ## ✨ Key Upgrades and Features
 
 * **Robust Data Integrity:** I corrected the initial flaw of multiplying the target variable by 100, which now allows for accurate and meaningful measurement of $\text{RMSE}$.
-* **Statistically Valid Feature Selection:** I replaced the incorrect $\chi^2$ test with the appropriate **ANOVA F-value ($\text{f\_regression}$) test** for accurate feature importance ranking. 
-* **Optimized XGBoost Regressor:** I implemented a lightweight configuration by reducing complexity (e.g., $\text{max\_depth}=5$, $\text{n\_jobs}=1$) and utilizing **Early Stopping** for faster, memory-safe training and improved generalization.
+* **Statistically Valid Feature Selection:** I replaced the incorrect $\chi^2$ test with the appropriate **ANOVA F-value test** for accurate feature importance ranking. 
+* **Optimized XGBoost Regressor:** I implemented a lightweight configuration by reducing complexity and utilizing **Early Stopping** for faster, memory-safe training and improved generalization.
 * **High Performance:** The optimized model achieved an excellent $\text{R}^2$ of $0.93$.
 
 ---
